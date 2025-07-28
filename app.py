@@ -25,8 +25,8 @@ if st.button("Predict Rainfall"):
                       cloud, sunshine, winddirection, windspeed]
 
     # === Basic Input Validation ===
-    if any(x == 0.0 for x in input_features):
-        st.error("⚠️ Please make sure all input fields are filled with non-zero values.")
+    if any(x is None or x == "" for x in input_features):
+        st.error("⚠️ Please fill all input fields before predicting.")
     elif not (850 <= pressure <= 1100):
         st.warning("⚠️ Pressure value seems unrealistic.")
     elif not (-50 <= temparature <= 60):
