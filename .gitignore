@@ -1,0 +1,9 @@
+/stacked_rainfall_model.pkl
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+.venv/
+.idea/
+.DS_Store
