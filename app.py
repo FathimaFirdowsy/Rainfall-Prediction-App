@@ -4,7 +4,7 @@ import pandas as pd
 import joblib
 
 # Load trained model and preprocessing objects
-model = joblib.load("stacked_model_calibrate.pkl")
+model = joblib.load("stacked_model_calibrated.pkl")
 scaler = joblib.load("scaler.pkl")
 poly = joblib.load("poly_features.pkl")
 
